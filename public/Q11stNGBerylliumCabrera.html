@@ -1,9 +1,15 @@
 <body>
 <script>
-    let age = 15;
-    let maxAge = 67;
-    let numPerDay = 100;
+    let age = window.prompt("Enter your age","1");
+    let maxAge = window.prompt("Enter your maxAge","1");
+    let numPerDay = window.prompt("Enter the number per day","1");
     let totalRequired = (numPerDay * 365) * (maxAge - age)
+    if (confirm(`Is ${age} really your age?`)) {
+        console.log("Are you sure?")
+    }
+else {
+    alert("Run the code again")
+}
     document.write("You will need ", totalRequired, " balls of takoyaki to last you until the ripe old age of ", maxAge,);
 </script>
 <br> (Made with asssistance from Ma'am Aline, consultation, July 30, 2025)
