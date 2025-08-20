@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2> Q1 2nd Graded Exercise submitted by Liuz Cabrera of 9-Beryllium</h2>
+        <label for="MealP">Meal Price:</label>
+        <input id="MealP"><br>
+
+        <label for="Tip">Tip:</label>
+        <input id="Tip"><br>
+
+        <label for="ServiceC">Service Charge:</label>
+        <input id="ServiceC"><br><br>
+
+        <button onclick="totalMeal()">Accept Input</button><br>
+        <p id="result"></p>
+
+    <script>
+        function totalMeal() {
+              let MealP = document.getElementById("MealP").value;
+              let Tip = document.getElementById("Tip").value;
+              let ServiceC = document.getElementById("ServiceC").value;
+              let totalCost = Number(MealP) + Number(Tip) + (Number(ServiceC) / 100 * Number(MealP));
+              result.innerHTML = "Total Cost of the Meal: " + totalCost.toFixed(2);
+        }
+    </script>
+<footer>Resources Used:<br>
+Mendoza, A. (2025). Commonly Used JavaScript Number Objects.</footer>
+</body>
+</html>
